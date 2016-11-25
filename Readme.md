@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Эрганян](https://up.htmlacademy.ru/adaptive/9/user/241574).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов](https://up.htmlacademy.ru/adaptive/9/user/27386).
 
 ---
 

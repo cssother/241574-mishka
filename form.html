@@ -9,7 +9,7 @@
       <div class="main-header__logo">
         <a class="main-header__link-to-main" href="index.html"><img src="http://placehold.it/86x35" width="86" height="35" alt="Mishka"></a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--no-js">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -18,42 +18,42 @@
           <li class="main-nav__item">
             <a class="main-nav__link">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item main-nav__item--search">
+          <li class="main-nav__item main-nav__item--icon main-nav__item--search">
             <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item main-nav__item--basket">
+          <li class="main-nav__item main-nav__item--icon main-nav__item--basket">
             <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="order">
-      <h1 class="order__title">Вязание на заказ</h1>
+      <h1 class="order__title page-title">Вязание на заказ</h1>
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="#" method="post">
-        <fieldset class="form__type">
+        <fieldset class="form__section">
           <legend class="form__title">Тип</legend>
           <input class="form__radio" id="interior" type="radio" name="type" value="interior" checked>
-          <label class="form__label" for="interior">Аксессуар для интерьера</label>
+          <label class="form__label form__label--radio" for="interior">Аксессуар для интерьера</label>
           <input class="form__radio" id="toy" type="radio" name="type" value="toy">
-          <label class="form__label" for="toy">Детская игрушка</label>
+          <label class="form__label form__label--radio" for="toy">Детская игрушка</label>
         </fieldset>
-        <fieldset class="form__color">
+        <fieldset class="form__section">
           <legend class="form__title">Цвет</legend>
           <input class="form__checkbox" id="white" type="checkbox" name="white" value="white" checked>
-          <label class="form__label" for="white">Белый</label>
+          <label class="form__label form__label--checkbox" for="white">Белый</label>
           <input class="form__checkbox" id="gray" type="checkbox" name="gray" value="gray" checked>
-          <label class="form__label" for="gray">Серый</label>
+          <label class="form__label form__label--checkbox" for="gray">Серый</label>
           <input class="form__checkbox" id="tiffani" type="checkbox" name="tiffani" value="tiffani">
-          <label class="form__label" for="tiffani">«Тиффани»</label>
+          <label class="form__label form__label--checkbox" for="tiffani">«Тиффани»</label>
           <input class="form__checkbox" id="black" type="checkbox" name="black" value="black">
-          <label class="form__label" for="black">Черный</label>
+          <label class="form__label form__label--checkbox" for="black">Черный</label>
           <input class="form__checkbox" id="pink" type="checkbox" name="pink" value="pink">
-          <label class="form__label" for="pink">Розовый</label>
+          <label class="form__label form__label--checkbox" for="pink">Розовый</label>
           <input class="form__checkbox" id="orange" type="checkbox" name="orange" value="orange">
-          <label class="form__label" for="orange">Оранжевый</label>
+          <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
         </fieldset>
-        <fieldset class="form__full-name">
+        <fieldset class="form__section">
           <legend class="form__title">ФИО</legend>
           <label class="form__label form__label--text" for="name">Имя:</label>
           <input class="form__text-input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
@@ -62,17 +62,17 @@
           <label class="form__label form__label--text" for="patronym">Отчество:</label>
           <input class="form__text-input" id="patronym" type="text" name="patronym" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset class="form__phone">
+        <fieldset class="form__section">
           <legend class="form__title">Тел</legend>
           <label class="form__label form__label--hidden" for="phone">Телефон:</label>
-          <input class="form__text form__text--phone" id="phone" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
+          <input class="form__text form__text--icon form__text--phone" id="phone" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
         </fieldset>
-        <fieldset class="form__email">
+        <fieldset class="form__section">
           <legend class="form__title">E-mail</legend>
           <label class="form__label form__label--hidden" for="email">E-mail:</label>
-          <input class="form__text form__text--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+          <input class="form__text form__text--icon form__text--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
         </fieldset>
-        <fieldset class="form__add">
+        <fieldset class="form__section">
           <legend class="form__title">Доп</legend>
           <label class="form__label form__label--hidden" for="add">Дополнительно:</label>
           <textarea class="form__textarea" id="add" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -82,12 +82,12 @@
       </form>
     </main>
     <footer class="main-footer">
-      <section class="social">
-        <a class="social__btn social-btn--inst" href="#">Инстаграм</a>
-        <a class="social__btn social-btn--fb" href="#">Фейсбук</a>
-        <a class="social__btn social-btn--tw" href="#">Твиттер</a>
+      <section class="social main-footer__social">
+        <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
+        <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
+        <a class="social__btn social__btn--tw" href="#">Твиттер</a>
       </section>
-      <div class="copyright">
+      <div class="copyright main-footer__copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
       </div>

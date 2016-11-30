@@ -9,7 +9,7 @@
       <div class="main-header__logo">
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--no-js">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -18,23 +18,21 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item main-nav__item--search">
+          <li class="main-nav__item main-nav__item--icon main-nav__item--search">
             <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item main-nav__item--basket">
+          <li class="main-nav__item main-nav__item--icon main-nav__item--basket">
             <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <h1 class="main__title">Милые штуки ручной работы для дома</h1>
-      <h2 class="catalog-section catalog-section--lamp">
-        <a class="catalog-section__link" href="#">Предметы интерьера</a>
-      </h2>
-      <h2 class="catalog-section catalog-section--toy">
-        <a class="catalog-section__link" href="#">Детские игрушки</a>
-      </h2>
+      <h1 class="main__title page-title page-title--main">Милые штуки ручной работы для дома</h1>
+      <div class="catalog-section">
+        <a class="catalog-section__link catalog-section__link--lamp" href="#">Предметы интерьера</a>
+        <a class="catalog-section__link catalog-section__link--toy" href="#">Детские игрушки</a>
+      </div>
       <article class="product">
         <h2 class="product__name">Вязаные корзинки</h2>
         <b class="product__status">Товар недели</b>
@@ -69,19 +67,21 @@
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="reviews__item">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author">
-            <b class="reviews__author-name">Анастасия Красильникова</b>
-            <span class="reviews__author-alias">@misssssiskras</span>
-          </cite>
-        </blockquote>
-        <div class="reviews__toggle">
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+        <div class="reviews__wrapper slider">
+          <h2 class="reviews__title">Отзывы</h2>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__author">
+              <b class="reviews__author-name">Анастасия Красильникова</b>
+              <span class="reviews__author-alias">@misssssiskras</span>
+            </cite>
+          </blockquote>
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--prev" type="button">Предыдущий отзыв</button>
+            <button class="slider__toggle slider__toggle--next" type="button">Следующий отзыв</button>
+          </div>
+          <a class="reviews__btn btn" href="#">Написать</a>
         </div>
-        <a class="reviews__btn btn" href="#">Написать</a>
       </section>
       <section class="contacts">
         <table class="contacts__table">
@@ -101,12 +101,12 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="social">
-        <a class="social__btn social-btn--inst" href="#">Инстаграм</a>
-        <a class="social__btn social-btn--fb" href="#">Фейсбук</a>
-        <a class="social__btn social-btn--tw" href="#">Твиттер</a>
+      <section class="social main-footer__social">
+        <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
+        <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
+        <a class="social__btn social__btn--tw" href="#">Твиттер</a>
       </section>
-      <div class="copyright">
+      <div class="copyright main-footer__copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
       </div>
@@ -114,12 +114,17 @@
     <div class="modal">
       <p class="modal__title">Добавить в корзину</p>
       <p class="modal__text">Выберите размер:</p>
-      <div class="modal__sizes">
-        <a class="modal__size modal__size--active" href="#">s</a>
-        <a class="modal__size" href="#">m</a>
-        <a class="modal__size" href="#">l</a>
-      </div>
-      <a class="modal__btn btn btn--green" href="#">Добавить</a>
+      <form class="customer-form modal__form" action="#" method="post">
+        <div class="customer-form__wrapper">
+          <input class="customer-form__checkbox" id="size-s" type="checkbox" name="size-s" value="size-s" checked>
+          <label class="customer-form__label btn btn--size" for="size-s">S</label>
+          <input class="customer-form__checkbox" id="size-m" type="checkbox" name="size-m" value="size-m">
+          <label class="customer-form__label btn btn--size" for="size-m">M</label>
+          <input class="customer-form__checkbox" id="size-l" type="checkbox" name="size-l" value="size-l">
+          <label class="customer-form__label btn btn--size" for="size-l">L</label>
+        </div>
+        <button class="customer-form__btn btn btn--green" type="submit">Добавить</button>
+      </form>
     </div>
     <div class="overlay"></div>
   </body>

@@ -24,4 +24,3 @@
 .customer-form__checkbox:checked + .customer-form__label {
   border-color: $green;
 }
-

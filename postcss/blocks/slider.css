@@ -1,0 +1,26 @@
+.slider__toggles {
+  font-size: 0;
+}
+
+.slider__toggle {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  min-height: 52px;
+  border: 1px solid #ececec;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+
+  &--prev {
+    border-right: none;
+    background: $white url("../img/icon-left-arrow.svg") no-repeat center center;
+  }
+
+  &--next {
+    background: $white url("../img/icon-right-arrow.svg") no-repeat center center;
+  }
+}

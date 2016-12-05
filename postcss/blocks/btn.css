@@ -1,0 +1,23 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  padding: 14px;
+  width: 260px;
+  @mixin font 17px, 16px, bold;
+  color: $gray;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid $gray;
+  cursor: pointer;
+
+  &--size {
+    width: 82px;
+  }
+
+  &--green {
+    border: none;
+    background-color: #63d1bb;
+    color: $white;
+  }
+}

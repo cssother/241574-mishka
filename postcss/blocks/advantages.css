@@ -1,0 +1,72 @@
+.advantages {
+  @mixin container;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  padding: 30px;
+  padding-bottom: 20px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  @mixin font 25px, 30px, bold;
+  color: $black;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @mixin font 17px, 20px, bold;
+  color: $black;
+}
+
+.advantages__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 56px;
+  padding-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+  }
+
+  &--flower::before {
+    background: url("../img/icon-feature-1.svg") no-repeat;
+    width: 33px;
+    height: 38px;
+  }
+
+  &--money::before {
+    background: url("../img/icon-feature-3.svg") no-repeat;
+    width: 47px;
+    height: 27px;
+  }
+
+  &--heart::before {
+    background: url("../img/icon-feature-5.svg") no-repeat;
+    width: 35px;
+    height: 29px;
+  }
+
+  &--clew::before {
+    background: url("../img/icon-feature-2.svg") no-repeat;
+    width: 36px;
+    height: 36px;
+  }
+
+  &--rocket::before {
+    background: url("../img/icon-feature-4.svg") no-repeat;
+    width: 55px;
+    height: 28px;
+  }
+
+  &--present::before {
+    background: url("../img/icon-feature-6.svg") no-repeat;
+    width: 36px;
+    height: 36px;
+  }
+}

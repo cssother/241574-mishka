@@ -1,0 +1,27 @@
+.customer-form {
+  @mixin container;
+  font-size: 0;
+}
+
+.customer-form__wrapper {
+  margin-bottom: 31px;
+}
+
+.customer-form__checkbox {
+  display: none;
+}
+
+.customer-form__label {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.customer-form__checkbox:checked + .customer-form__label {
+  border-color: #63d1bb;
+}
+

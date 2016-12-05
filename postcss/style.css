@@ -1,0 +1,23 @@
+@import "mixins.css";
+@import "variables.css";
+
+@import "global/body.css";
+@import "global/fonts.css";
+
+@import "blocks/advantages.css";
+@import "blocks/btn.css";
+@import "blocks/catalog-section.css";
+@import "blocks/contacts.css";
+@import "blocks/copyright.css";
+@import "blocks/customer-form.css";
+@import "blocks/main-footer.css";
+@import "blocks/main-header.css";
+@import "blocks/main-nav.css";
+@import "blocks/main.css";
+@import "blocks/modal.css";
+@import "blocks/overlay.css";
+@import "blocks/page-title.css";
+@import "blocks/product.css";
+@import "blocks/reviews.css";
+@import "blocks/slider.css";
+@import "blocks/social.css";

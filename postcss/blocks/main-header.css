@@ -1,0 +1,14 @@
+.main-header {
+  padding-top: 22px;
+  min-height: 35px;
+  background-color: $white;
+  color: $black;
+  box-shadow: inset 0 1px 0 0 #ececec,
+              0 1px 0 0 #ececec;
+}
+
+.main-header__logo {
+  @mixin container;
+  width: 86px;
+  padding-bottom: 23px;
+}

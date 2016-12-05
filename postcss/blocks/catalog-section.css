@@ -1,0 +1,21 @@
+.catalog-section {
+  @mixin container;
+}
+
+.catalog-section__link {
+  display: block;
+  padding-left: 29px;
+  padding-right: 185px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 106px;
+  @mixin font 19px, 24px, bold;
+  color: $white;
+  text-decoration: none;
+  &--lamp {
+    background: #63d1bb url("../img/icon-interior.svg") no-repeat 243px center;
+  }
+  &--toy {
+    background:  #56c3b2 url("../img/icon-toy.svg") no-repeat 233px center;
+  }
+}

@@ -1,0 +1,49 @@
+.contacts {
+  margin-top: 50px;
+}
+
+.contacts__title {
+  margin: 0;
+  @mixin container;
+  margin-bottom: 28px;
+  padding: 0 30px;
+  @mixin font 18px, 30px, bold;
+  color: $black;
+}
+
+.contacts__table {
+  margin: 0;
+  @mixin container;
+  margin-bottom: 40px;
+  padding: 0 30px;
+  @mixin font 15px, 30px, normal;
+  color: $gray;
+}
+
+.contacts__item-name {
+  display: block;
+  width: 50px;
+  margin-right: 33px;
+}
+
+.contacts__email {
+  color: $gray;
+  text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__map {
+  position: relative;
+  padding: 0;
+  margin-bottom: 39px;
+  min-width: 320px;
+  min-height: 457px;
+  background: url("../img/icon-map-pin.svg") no-repeat calc(50% - 3px) 165px,
+              #f3f1ea url("../img/map-mobile@1x.jpg") no-repeat center center;
+  color: $black;
+}
+
+.contacts__btn {
+  @mixin container;
+  width: 260px;
+}

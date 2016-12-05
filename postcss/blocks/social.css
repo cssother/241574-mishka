@@ -1,0 +1,48 @@
+.social {
+  position: relative;
+  min-height: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 260px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+}
+
+.social__btn {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 40px;
+  width: 24px;
+  height: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--inst {
+    width: 22px;
+    height: 21px;
+    background: url("../img/icon-insta.svg") no-repeat;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+    background: url("../img/icon-fb.svg") no-repeat;
+  }
+
+  &--tw {
+    width: 24px;
+    height: 20px;
+    background: url("../img/icon-twitter.svg") no-repeat;
+  }
+}

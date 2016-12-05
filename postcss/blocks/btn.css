@@ -3,6 +3,8 @@
   box-sizing: border-box;
   padding: 14px;
   width: 260px;
+  background-color: $white;
+  font-family: "Open Sans", "Arial", sans-serif;
   @mixin font 17px, 16px, bold;
   color: $gray;
   text-align: center;
@@ -17,7 +19,7 @@
 
   &--green {
     border: none;
-    background-color: #63d1bb;
+    background-color: $green;
     color: $white;
   }
 }

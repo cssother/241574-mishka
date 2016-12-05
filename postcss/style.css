@@ -10,11 +10,13 @@
 @import "blocks/contacts.css";
 @import "blocks/copyright.css";
 @import "blocks/customer-form.css";
+@import "blocks/form.css";
 @import "blocks/main-footer.css";
 @import "blocks/main-header.css";
 @import "blocks/main-nav.css";
 @import "blocks/main.css";
 @import "blocks/modal.css";
+@import "blocks/order.css";
 @import "blocks/overlay.css";
 @import "blocks/page-title.css";
 @import "blocks/product.css";

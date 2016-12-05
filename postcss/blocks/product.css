@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   @mixin font 17px, 16px, bold;
-  color: #63d1bb;
+  color: $green;
   text-transform: uppercase;
 }
 

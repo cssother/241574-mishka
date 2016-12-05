@@ -1,0 +1,15 @@
+.order {
+  margin: 0;
+  @mixin container;
+}
+
+.order__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  @mixin font 13px, 24px, normal;
+  color: $gray;
+}

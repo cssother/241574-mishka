@@ -5,7 +5,9 @@
 @import "global/fonts.css";
 
 @import "blocks/advantages.css";
+@import "blocks/assortment.css";
 @import "blocks/btn.css";
+@import "blocks/catalog.css";
 @import "blocks/catalog-section.css";
 @import "blocks/contacts.css";
 @import "blocks/copyright.css";
@@ -20,6 +22,8 @@
 @import "blocks/overlay.css";
 @import "blocks/page-title.css";
 @import "blocks/product.css";
+@import "blocks/production.css";
+@import "blocks/product-catalog.css";
 @import "blocks/reviews.css";
 @import "blocks/slider.css";
 @import "blocks/social.css";

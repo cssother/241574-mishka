@@ -1,0 +1,13 @@
+.main-footer {
+  box-sizing: border-box;
+  min-height: 160px;
+  background-color: #f1f1f1;
+}
+
+.main-footer__social {
+  @mixin container;
+}
+
+.main-footer__copyright {
+  @mixin container;
+}

@@ -1,0 +1,41 @@
+.reviews {
+  @mixin container;
+  margin-bottom: 44px;
+  padding: 0 30px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  @mixin font 25px, 30px, bold;
+  color: $black;
+}
+
+.reviews__item {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.reviews__text {
+  @mixin font 15px, 30px, normal;
+  color: $gray;
+}
+
+.reviews__author-name {
+  @mixin font 18px, 24px, bold;
+  font-style: normal;
+  color: $black;
+}
+
+.reviews__author-alias {
+  display: block;
+  @mixin font 18px, 30px, normal;
+  font-style: normal;
+  color: $gray;
+}
+
+.reviews__toggles {
+  margin-bottom: 38px;
+}

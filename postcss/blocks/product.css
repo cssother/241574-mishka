@@ -1,0 +1,51 @@
+.product {
+  @mixin container;
+  margin-bottom: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 32px;
+  color: $black;
+}
+
+.product__name {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  @mixin font 25px, 30px, bold;
+  color: $black;
+}
+
+.product__status {
+  margin: 0;
+  padding: 0;
+  @mixin font 17px, 16px, bold;
+  color: $green;
+  text-transform: uppercase;
+}
+
+.product__description {
+  @mixin font 15px, 24px, normal;
+  color: $gray;
+}
+
+.product__characteristics {
+  @mixin font 15px, 20px, normal;
+  color: $gray;
+}
+
+.product__characteristic-name {
+  display: block;
+  margin-right: 30px;
+}
+
+.product__image {
+  margin-bottom: 26px;
+}
+
+.product__price {
+  display: block;
+  margin-bottom: 25px;
+  @mixin font 17px, 24px, bold;
+  color: $gray;
+  text-align: center;
+}

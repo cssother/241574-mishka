@@ -1,0 +1,43 @@
+.production {
+  position: relative;
+  @mixin container;
+  margin-bottom: 58px;
+  padding: 0 30px;
+}
+
+.production__title {
+  margin: 0;
+  padding-left: 90px;
+  padding-right: 42px;
+  padding-top: 25px;
+  padding-bottom: 22px;
+  border: 1px solid #ececec;
+  @mixin font 17px, 24px, bold;
+  color: $black;
+}
+
+.production__video-btn {
+  position: absolute;
+  left: 110px;
+  top: 135px;
+}
+
+.production__text {
+  margin: 0;
+  margin-top: -6px;
+  padding: 0;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 28px;
+  padding-bottom: 105px;
+  border: 1px solid #ececec;
+  @mixin font 13px, 24px, normal;
+  color: $gray;
+}
+
+.production__btn {
+  position: absolute;
+  left: 63px;
+  bottom: 32px;
+  width: 192px;
+}

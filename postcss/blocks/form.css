@@ -1,0 +1,164 @@
+.form {
+  margin: 0;
+  @mixin container;
+  margin-bottom: 55px;
+  padding: 0 30px;
+}
+
+.form__section {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  border: none;
+
+  &:last-of-type {
+    margin-bottom: 16px;
+  }
+}
+
+.form__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  @mixin font 17px, 16px, bold;
+  color: $green;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 62px;
+    top: 6px;
+    width: 198px;
+    height: 1px;
+    background-color: $green;
+  }
+}
+
+.form__radio,
+.form__checkbox {
+  display: none;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 20px;
+  @mixin font 17px, 18px, bold;
+  color: $black;
+
+  &--radio {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 62px;
+    padding-right: 10px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+
+  &--radio:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--radio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid $gray;
+    border-radius: 50%;
+  }
+
+  &--radio::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+  }
+
+  &--checkbox {
+    position: relative;
+    margin-bottom: 22px;
+    padding-left: 62px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+    cursor: pointer;
+  }
+
+  &--checkbox:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid $gray;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.form__radio:checked + .form__label--radio::after {
+  display: block;
+}
+
+.form__checkbox:checked + .form__label--checkbox::before {
+  background: url("../img/icon-tick.svg") no-repeat center center;
+  background-size: 22px 16px;
+}
+
+.form__text {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  padding-bottom: 15px;
+  width: 260px;
+  border: none;
+  border-bottom: 2px solid $black;
+  font-family: "Open Sans", "Arial", sans-serif;
+  @mixin font 17px, 18px, normal;
+  color: $gray;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 16px 15px;
+  width: 260px;
+  min-height: 138px;
+  border: 2px solid $black;
+  font-family: "Open Sans", "Arial", sans-serif;
+  @mixin font 17px, 18px, normal;
+  color: $gray;
+}
+
+.form__remark {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  @mixin font 14px, 16px, normal;
+  color: $gray;
+}
+
+.form__btn {
+  margin-bottom: 20px;
+}

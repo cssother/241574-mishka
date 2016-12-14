@@ -1,11 +1,13 @@
 .btn {
   display: block;
   box-sizing: border-box;
-  padding: 14px;
+  padding: 16px;
   width: 260px;
   background-color: $white;
   font-family: "Open Sans", "Arial", sans-serif;
-  @mixin font 17px, 16px, bold;
+  font-size: 17px;
+  line-height: 1;
+  font-weight: bold;
   color: $gray;
   text-align: center;
   text-decoration: none;

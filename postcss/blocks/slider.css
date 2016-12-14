@@ -1,26 +1,35 @@
 .slider__toggles {
-  font-size: 0;
+  display: flex;
 }
 
 .slider__toggle {
-  display: inline-block;
-  vertical-align: top;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 130px;
-  min-height: 52px;
+  height: 52px;
   border: 1px solid #ececec;
   font-size: 0;
   cursor: pointer;
   outline: none;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   &--prev {
     border-right: none;
-    background: $white url("../img/icon-left-arrow.svg") no-repeat center center;
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
   &--next {
-    background: $white url("../img/icon-right-arrow.svg") no-repeat center center;
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}
+
+@media (--tablet-widths) {
+
+  .slider__toggle {
+    width: 86px;
+    border: none;
   }
 }

@@ -1,18 +1,22 @@
 .copyright {
-  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17px;
   padding-bottom: 30px;
   text-align: center;
 }
 
 .copyright__text {
-  display: inline-block;
-  vertical-align: middle;
   margin-right: 30px;
-  min-height: 19px;
-  @mixin font 19px, 18px, bold;
+  font-size: 19px;
+  line-height: 1;
+  font-weight: bold;
 }
 
-.copyright__link {
-  display: inline-block;
-  vertical-align: middle;
+.copyright__link img {
+  margin-top: 4px;
+  align-self: flex-end;
+  width: 27px;
+  height: 34px;
 }

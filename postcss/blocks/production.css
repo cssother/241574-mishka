@@ -1,8 +1,8 @@
 .production {
   position: relative;
   @mixin container;
-  margin-bottom: 58px;
   padding: 0 30px;
+  padding-bottom: 58px;
 }
 
 .production__title {
@@ -12,7 +12,9 @@
   padding-top: 25px;
   padding-bottom: 22px;
   border: 1px solid #ececec;
-  @mixin font 17px, 24px, bold;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: bold;
   color: $black;
 }
 
@@ -31,13 +33,15 @@
   padding-top: 28px;
   padding-bottom: 105px;
   border: 1px solid #ececec;
-  @mixin font 13px, 24px, normal;
+  font-size: 13px;
+  line-height: 1.9;
+  font-weight: normal;
   color: $gray;
 }
 
 .production__btn {
   position: absolute;
   left: 63px;
-  bottom: 32px;
+  bottom: 90px;
   width: 192px;
 }

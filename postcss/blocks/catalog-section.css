@@ -1,21 +1,60 @@
 .catalog-section {
   @mixin container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .catalog-section__link {
+  box-sizing: border-box;
   display: block;
   padding-left: 29px;
-  padding-right: 185px;
-  padding-top: 30px;
+  padding-right: 125px;
+  padding-top: 24px;
   padding-bottom: 30px;
-  width: 106px;
-  @mixin font 19px, 24px, bold;
+  font-size: 19px;
+  line-height: 1.3;
+  font-weight: bold;
   color: $white;
   text-decoration: none;
+
   &--lamp {
-    background: $green url("../img/icon-interior.svg") no-repeat 243px center;
+    background: $green url("../img/icon-interior.svg") no-repeat calc(100% - 36px) 25px;
   }
+
   &--toy {
-    background:  #56c3b2 url("../img/icon-toy.svg") no-repeat 233px center;
+    background:  #56c3b2 url("../img/icon-toy.svg") no-repeat calc(100% - 27px) center;
+  }
+}
+
+@media (--tablet-widths) {
+
+  .catalog-section {
+    background-color: #f9f9f9;
+  }
+
+  .catalog-section__link {
+    width: 334px;
+    padding-left: 35px;
+    padding-top: 29px;
+    font-size: 20px;
+    line-height: 1.5;
+
+    &--lamp {
+      background-position: calc(100% - 38px) 30px;
+    }
+
+    &--toy {
+      background-position: calc(100% - 36px) 32px;
+    }
+  }
+}
+
+@media (--desktop-widths) {
+
+  .catalog-section__link {
+    width: 525px;
+    padding-right: 310px;
+    padding-bottom: 58px;
   }
 }

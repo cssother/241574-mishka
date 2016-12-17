@@ -1,0 +1,20 @@
+.catalog {
+  padding-bottom: 58px;
+}
+
+
+@media (--tablet-widths) {
+
+  .catalog {
+    margin-top: -69px;
+    padding-bottom: 63px;
+  }
+}
+
+@media (--desktop-widths) {
+
+  .catalog {
+    margin-top: -76px;
+    padding-bottom: 105px;
+  }
+}

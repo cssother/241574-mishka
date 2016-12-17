@@ -1,13 +1,13 @@
 @media (--tablet-widths) {
 
-  .main .main__title {
+  .main {
     margin-top: -69px;
   }
 }
 
 @media (--desktop-widths) {
 
-  .main .main__title {
+  .main {
     margin-top: -76px;
   }
 }

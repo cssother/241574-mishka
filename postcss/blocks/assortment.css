@@ -1,4 +1,7 @@
 .assortment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   @mixin container;
   padding: 30px;
 }
@@ -11,3 +14,25 @@
   }
 }
 
+@media (--tablet-widths) {
+
+  .assortment {
+    padding: 50px;
+    padding-top: 81px;
+  }
+
+  .assortment__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (--desktop-widths) {
+
+  .assortment {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 129px;
+    padding-bottom: 56px;
+  }
+}

@@ -4,7 +4,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 71px;
-  padding-bottom: 80px;
+  padding-bottom: 76px;
   background-color: #f1f1f1;
   font-size: 27px;
   line-height: 1.1;
@@ -21,13 +21,17 @@
 @media (--tablet-widths) {
 
   .page-title {
-    padding-top: 155px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 94px;
+    padding-bottom: 82px;
     font-size: 43px;
 
     &--main {
+      padding-top: 155px;
+      padding-bottom: 377px;
       background-size: cover;
       background-position: center 13px;
-      padding-bottom: 377px;
     }
   }
 }
@@ -35,10 +39,12 @@
 @media (--desktop-widths) {
 
   .page-title {
-    padding-top: 152px;
+    padding-top: 90px;
+    padding-bottom: 102px;
     font-size: 53px;
 
     &--main {
+      padding-top: 152px;
       padding-bottom: 356px;
       background-position: center -2px;
     }

@@ -3,7 +3,7 @@
 @import "global/variables.css";
 @import "global/mixins.css";
 @import "global/fonts.css";
-@import "global/body.css";
+@import "global/scaffolding.css";
 
 @import "blocks/advantages.css";
 @import "blocks/assortment.css";

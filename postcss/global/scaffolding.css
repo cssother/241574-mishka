@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+  color: $black;
+  background-color: $white;
+}
+
+textarea {
+  max-width: 260px;
+}
+
+input, textarea {
+  background-color: inherit;
+}
+
+@media (--tablet-widths) {
+
+  textarea {
+    min-width: 501px;
+    max-width: 501px;
+  }
+}
+
+@media (--desktop-widths) {
+
+  textarea {
+    min-width: 701px;
+    max-width: 701px;
+  }
+}

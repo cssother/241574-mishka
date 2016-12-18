@@ -11,6 +11,14 @@
   padding-bottom: 32px;
   width: 260px;
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__title {
@@ -46,6 +54,16 @@
   position: absolute;
   left: 80px;
   top: 135px;
+
+  &:hover {
+    left: 70px;
+    top: 127px;
+  }
+
+  &:active {
+    left: 90px;
+    top: 143px;
+  }
 }
 
 .production__text {

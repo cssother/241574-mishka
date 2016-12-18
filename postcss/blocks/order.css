@@ -14,3 +14,31 @@
   font-weight: normal;
   color: $gray;
 }
+
+@media (--tablet-widths) {
+
+  .order {
+    margin-top: -70px;
+  }
+
+  .order__text {
+    padding-top: 72px;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 17px;
+  }
+}
+
+@media (--desktop-widths) {
+
+  .order {
+    margin-top: -77px;
+  }
+
+  .order__text {
+    padding-top: 124px;
+    width: 700px;
+    margin: 0 auto;
+  }
+}

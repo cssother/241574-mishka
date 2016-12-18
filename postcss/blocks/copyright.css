@@ -5,6 +5,10 @@
   padding-top: 17px;
   padding-bottom: 30px;
   text-align: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -19,4 +23,11 @@
   align-self: flex-end;
   width: 27px;
   height: 34px;
+}
+
+@media (--tablet-widths) {
+
+  .copyright {
+    padding-top: 22px;
+  }
 }

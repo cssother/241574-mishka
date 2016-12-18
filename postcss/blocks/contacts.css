@@ -37,6 +37,14 @@
   color: $gray;
   text-decoration: none;
   border-bottom: 1px solid #62d1ba;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {

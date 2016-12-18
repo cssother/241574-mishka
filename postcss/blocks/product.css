@@ -9,6 +9,10 @@
   color: $black;
 }
 
+.catalog-section:hover ~ .product {
+  padding-top: 22px;
+}
+
 .product__name {
   margin: 0;
   margin-bottom: 8px;
@@ -91,6 +95,10 @@
     padding-right: 50px;
   }
 
+  .catalog-section:hover ~ .product {
+    padding-top: 37px;
+  }
+
   .product__title {
     margin-bottom: 43px;
     width: 100%;
@@ -162,8 +170,12 @@
 
   .product {
     padding-left: 74px;
-    padding-top: 92px;
+    padding-top: 120px;
     padding-bottom: 61px;
+  }
+
+  .catalog-section:hover ~ .product {
+    padding-top: 115px;
   }
 
   .product__title {

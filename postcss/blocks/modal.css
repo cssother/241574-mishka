@@ -39,3 +39,27 @@
   color: $gray;
   text-align: center;
 }
+
+.modal--show {
+  display: block;
+}
+
+@media (--tablet-widths) {
+
+  .modal {
+    margin-left: -284px;
+    padding-left: 106px;
+    padding-right: 106px;
+    width: 568px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 1.9;
+  }
+
+  .modal__text {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}

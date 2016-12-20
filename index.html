@@ -2,59 +2,83 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <img src="../img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+      <div class="main-header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--no-js">
+        <!-- Открытие меню в мобильной версии осуществляется путём удаления класса main-nav--closed и добавления класса main-nav--opened, закрытие - наоборот. -->
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <!-- При добавлении класса main-nav--opened и удалении main-nav--closed гамбургер превращается в крестик-->
+          <div class="main-nav__logo main-nav__logo--no-link">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-block">
+            <li class="main-nav__item main-nav__item--icon main-nav__item--search">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item main-nav__item--icon main-nav__item--basket">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__optional">
+            <li class="main-nav__item main-nav__item--optional">
+              <a class="main-nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--optional">
+              <a class="main-nav__link" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item main-nav__item--optional">
+              <a class="main-nav__link main-nav__link--not-bold" href="#">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav main-nav--no-js">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item main-nav__item--icon main-nav__item--search">
-            <a class="main-nav__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item main-nav__item--icon main-nav__item--basket">
-            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
-      <h1 class="main__title page-title page-title--main">Милые штуки ручной работы&nbsp;для дома</h1>
+      <h1 class="main__title page-title page-title--main">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
       <div class="catalog-section">
         <a class="catalog-section__link catalog-section__link--lamp" href="#">Предметы интерьера</a>
         <a class="catalog-section__link catalog-section__link--toy" href="#">Детские игрушки</a>
       </div>
       <article class="product">
-        <h2 class="product__name">Вязаные корзинки</h2>
-        <b class="product__status">Товар недели</b>
-        <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="product__characteristics">
-          <tr class="product__characteristic">
-            <td class="product__characteristic-name">Цвет:</td>
-            <td class="product__characteristic-value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="product__characteristic">
-            <td class="product__characteristic-name">Диаметр:</td>
-            <td class="product__characteristic-value">25 см</td>
-          </tr>
-          <tr class="product__characteristic">
-            <td class="product__characteristic-name">Высота:</td>
-            <td class="product__characteristic-value">15 см</td>
-          </tr>
-        </table>
-        <img class="product__image" src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-        <span class="product__price">Цена: 990 руб.</span>
-        <a class="product__btn btn" href="#">Заказать</a>
+        <div class="product__title">
+          <h2 class="product__name">Вязаные корзинки</h2>
+          <b class="product__status">Товар недели</b>
+        </div>
+        <div class="product__wrapper">
+          <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="product__characteristics">
+            <tr class="product__characteristic">
+              <td class="product__characteristic-name">Цвет:</td>
+              <td class="product__characteristic-value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="product__characteristic">
+              <td class="product__characteristic-name">Диаметр:</td>
+              <td class="product__characteristic-value">25 см</td>
+            </tr>
+            <tr class="product__characteristic">
+              <td class="product__characteristic-name">Высота:</td>
+              <td class="product__characteristic-value">15 см</td>
+            </tr>
+          </table>
+        </div>
+        <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <div class="product__buy">
+          <span class="product__price">Цена: 990 руб.</span>
+          <a class="product__btn btn" href="#">Заказать</a>
+        </div>
       </article>
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
@@ -97,22 +121,29 @@
           </tr>
           <tr class="contacts__item">
             <td class="contacts__item-name">адрес:</td>
-            <td class="contacts__item-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            <td class="contacts__item-value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</td>
           </tr>
         </table>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177083!2d30.320889250973494!3d59.93879686895981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1481202123127" frameborder="0" allowfullscreen></iframe>
+        </div>
         <a class="contacts__btn btn" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
-      <section class="social main-footer__social">
-        <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
-        <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
-        <a class="social__btn social__btn--tw" href="#">Твиттер</a>
-      </section>
-      <div class="copyright main-footer__copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru"><img src="../img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo">
+          <img src="img/logo-mobile.svg" width="106" height="40" alt="Мишка">
+        </div>
+        <section class="social main-footer__social">
+          <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
+          <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
+          <a class="social__btn social__btn--tw" href="#">Твиттер</a>
+        </section>
+        <div class="copyright main-footer__copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+        </div>
       </div>
     </footer>
     <div class="modal">
@@ -131,5 +162,6 @@
       </form>
     </div>
     <div class="overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>

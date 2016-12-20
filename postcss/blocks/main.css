@@ -1,3 +1,13 @@
-.main {
-  margin-bottom: 39px;
+@media (--tablet-widths) {
+
+  .main {
+    margin-top: -69px;
+  }
+}
+
+@media (--desktop-widths) {
+
+  .main {
+    margin-top: -76px;
+  }
 }

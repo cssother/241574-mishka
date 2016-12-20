@@ -1,8 +1,9 @@
-@import "mixins.css";
-@import "variables.css";
+@import "global/normalize.css";
 
-@import "global/body.css";
+@import "global/variables.css";
+@import "global/mixins.css";
 @import "global/fonts.css";
+@import "global/scaffolding.css";
 
 @import "blocks/advantages.css";
 @import "blocks/assortment.css";

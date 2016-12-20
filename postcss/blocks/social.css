@@ -1,7 +1,9 @@
 .social {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   position: relative;
-  min-height: 80px;
-  padding-top: 30px;
+  padding-top: 23px;
   padding-bottom: 30px;
   text-align: center;
   font-size: 0;
@@ -10,16 +12,14 @@
     content: "";
     position: absolute;
     left: 30px;
+    right: 30px;
     bottom: 0;
-    width: 260px;
     height: 1px;
     background-color: #e5e5e5;
   }
 }
 
 .social__btn {
-  display: inline-block;
-  vertical-align: bottom;
   margin-right: 40px;
   width: 24px;
   height: 27px;
@@ -44,5 +44,20 @@
     width: 24px;
     height: 20px;
     background: url("../img/icon-twitter.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (--tablet-widths) {
+
+  .social {
+    padding-top: 20px;
+
+    &::after {
+      display: none;
+    }
   }
 }

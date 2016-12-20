@@ -1,9 +1,38 @@
 .assortment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   @mixin container;
-  padding: 0 30px;
-  padding-top: 30px;
+  padding: 30px;
 }
 
 .assortment__item {
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (--tablet-widths) {
+
+  .assortment {
+    padding: 50px;
+    padding-top: 81px;
+  }
+
+  .assortment__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (--desktop-widths) {
+
+  .assortment {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 129px;
+    padding-bottom: 56px;
+  }
 }

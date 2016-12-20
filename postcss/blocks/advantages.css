@@ -1,72 +1,144 @@
 .advantages {
   @mixin container;
-  margin-top: 7px;
-  margin-bottom: 15px;
   padding: 30px;
-  padding-bottom: 20px;
+  padding-top: 35px;
+  padding-bottom: 26px;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   padding: 0;
-  @mixin font 25px, 30px, bold;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
   color: $black;
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
-  @mixin font 17px, 20px, bold;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: bold;
   color: $black;
 }
 
 .advantages__item {
   position: relative;
-  margin-bottom: 20px;
-  padding-top: 56px;
+  margin-bottom: 16px;
+  padding-top: 57px;
   padding-bottom: 10px;
 
   &::before {
     content: "";
     position: absolute;
+    left: 0;
     top: 0;
+    width: 60px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: 1px center;
   }
 
   &--flower::before {
-    background: url("../img/icon-feature-1.svg") no-repeat;
-    width: 33px;
-    height: 38px;
+    background-image: url("../img/icon-feature-1.svg");
+    background-position: 10px;
   }
 
   &--money::before {
-    background: url("../img/icon-feature-3.svg") no-repeat;
-    width: 47px;
-    height: 27px;
+    background-image: url("../img/icon-feature-3.svg");
   }
 
   &--heart::before {
-    background: url("../img/icon-feature-5.svg") no-repeat;
-    width: 35px;
-    height: 29px;
+    background-image: url("../img/icon-feature-5.svg");
   }
 
   &--clew::before {
-    background: url("../img/icon-feature-2.svg") no-repeat;
-    width: 36px;
-    height: 36px;
+    background-image: url("../img/icon-feature-2.svg");
   }
 
   &--rocket::before {
-    background: url("../img/icon-feature-4.svg") no-repeat;
-    width: 55px;
-    height: 28px;
+    background-image: url("../img/icon-feature-4.svg");
   }
 
   &--present::before {
-    background: url("../img/icon-feature-6.svg") no-repeat;
-    width: 36px;
-    height: 36px;
+    background-image: url("../img/icon-feature-6.svg");
   }
 }
+
+
+@media (--tablet-widths) {
+
+  .advantages {
+    padding-top: 75px;
+    padding-bottom: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advantages__title {
+    margin-bottom: 45px;
+    font-size: 43px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    padding-right: 15px;
+    width: 333px;
+    font-size: 20px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--clew {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
+}
+
+@media (--desktop-widths) {
+
+  .advantages {
+    padding-top: 90px;
+    padding-bottom: 34px;
+    width: 800px;
+  }
+
+  .advantages__title {
+    font-size: 53px;
+  }
+
+  .advantages__item {
+    width: 350px;
+  }
+}
+
+

@@ -1,10 +1,6 @@
-.customer-form {
-  @mixin container;
-  font-size: 0;
-}
-
 .customer-form__wrapper {
   margin-bottom: 31px;
+  font-size: 0;
 }
 
 .customer-form__checkbox {
@@ -23,4 +19,8 @@
 
 .customer-form__checkbox:checked + .customer-form__label {
   border-color: $green;
+  background-color: $white;
+  color: $gray;
 }
+
+

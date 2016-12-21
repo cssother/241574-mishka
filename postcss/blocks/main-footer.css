@@ -30,6 +30,9 @@
   .main-footer__logo {
     display: block;
     margin-right: 155px;
+  }
+
+  .main-footer__logo a {
 
     &:active {
       opacity: 0.3;

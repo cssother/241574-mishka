@@ -18,7 +18,10 @@
 @media (--tablet-widths) {
 
   .order {
-    margin-top: -70px;
+
+    .order__title {
+      margin-top: -70px;
+    }
   }
 
   .order__text {
@@ -33,7 +36,10 @@
 @media (--desktop-widths) {
 
   .order {
-    margin-top: -77px;
+
+    .order__title {
+      margin-top: -77px;
+    }
   }
 
   .order__text {

@@ -1,11 +1,14 @@
 .contacts {
-  padding-top: 53px;
+  padding-top: 51px;
   padding-bottom: 38px;
+}
+
+.contacts__wrapper {
+  @mixin container;
 }
 
 .contacts__title {
   margin: 0;
-  @mixin container;
   padding: 0 30px;
   font-size: 18px;
   line-height: 1.7;
@@ -15,8 +18,7 @@
 
 .contacts__table {
   margin: 0;
-  @mixin container;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   padding: 0 30px;
   font-size: 15px;
   line-height: 2;
@@ -40,21 +42,23 @@
 
   &:hover {
     color: #46c1ae;
+    transition: 0.3s;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.3s;
   }
 }
 
 .contacts__map {
-  position: relative;
   padding: 0;
   margin-bottom: 39px;
   min-width: 320px;
   height: 457px;
-  background: url("../img/icon-map-pin.svg") no-repeat calc(50% - 3px) 165px,
-              #f3f1ea url("../img/map-mobile@1x.jpg") no-repeat center center;
+  background: url("../img/icon-map-pin.svg") no-repeat,
+              #f3f1ea url("../img/map-mobile@1x.jpg") no-repeat;
+  background-position:  calc(50% - 3px) 165px, center center;
   color: $black;
 }
 
@@ -65,7 +69,7 @@
 }
 
 .contacts__btn {
-  @mixin container;
+  margin: 0 auto;
   width: 260px;
 }
 
@@ -139,16 +143,27 @@
 @media (--desktop-widths) {
 
   .contacts {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     @mixin container;
     padding-left: 167px;
-    padding-right: 580px;
+    padding-right: 50px;
     padding-top: 213px;
-    padding-bottom: 105px;
+    padding-bottom: 49px;
+  }
+
+  .contacts__wrapper {
+    order: 1;
+    width: 380px;
+    margin-bottom: 76px;
   }
 
   .contacts__title {
     font-size: 53px;
+    margin-bottom: 31px;
+    width: 380px;
 
     &::before {
       left: -55px;
@@ -157,7 +172,8 @@
   }
 
   .contacts__table {
-    margin-bottom: 76px;
+    width: 380px;
+    margin-left: 0;
   }
 
   .contacts__table tbody {
@@ -173,16 +189,17 @@
   }
 
   .contacts__map {
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
+    order: 2;
+    margin-top: -54px;
   }
 
   .contacts__map iframe {
     width: 525px;
- }
+  }
 
- .contacts__btn {
-    margin-left: 50px;
- }
+  .contacts__btn {
+    order: 3;
+    margin-top: -108px;
+    margin-left: 58px;
+  }
 }

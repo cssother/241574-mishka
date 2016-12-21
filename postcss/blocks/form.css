@@ -167,11 +167,11 @@
   height: 49px;
   border: none;
   border-bottom: 2px solid $black;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.1;
   font-weight: normal;
   color: $gray;
+  background-color: transparent;
   outline: none;
 
   &:hover {
@@ -190,9 +190,6 @@
     position: relative;
     margin-top: -13px;
     padding-right: 40px;
-  }
-
-  &--icon {
     background-position: calc(100% - 5px) 6px;
     background-repeat: no-repeat;
   }
@@ -213,7 +210,6 @@
   width: 260px;
   min-height: 139px;
   border: 2px solid $black;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.1;
   font-weight: normal;

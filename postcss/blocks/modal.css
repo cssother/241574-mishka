@@ -15,6 +15,11 @@
   background-color: $white;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  &--show {
+    display: block;
+    animation: popup 0.5s;
+  }
 }
 
 .modal__title {
@@ -38,10 +43,6 @@
   font-weight: normal;
   color: $gray;
   text-align: center;
-}
-
-.modal--show {
-  display: block;
 }
 
 @media (--tablet-widths) {

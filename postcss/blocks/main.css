@@ -1,13 +1,27 @@
+.main__catalog-section {
+  margin-top: -5px;
+}
+
 @media (--tablet-widths) {
 
   .main {
-    margin-top: -69px;
+
+    .main__title {
+      margin-top: -69px;
+    }
+  }
+
+  .main__catalog-section {
+    margin-top: -122px;
   }
 }
 
 @media (--desktop-widths) {
 
   .main {
-    margin-top: -76px;
+
+    .main__title {
+      margin-top: -76px;
+    }
   }
 }

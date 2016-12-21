@@ -32,14 +32,17 @@
 }
 
 .main-nav__logo {
+  box-sizing: border-box;
+  min-height: 80px;
   margin-left: -2px;
   padding-top: 14px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   text-align: center;
+  box-shadow: inset 0 1px 0 0 #ececec;
 
   &--no-link {
     padding-top: 22px;
-    padding-bottom: 19px;
+    padding-bottom: 18px;
   }
 }
 
@@ -56,10 +59,12 @@
 
   &:hover {
     opacity: 0.6;
+    transition: 0.3s;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.3s;
   }
 }
 
@@ -123,10 +128,12 @@
 
   &:hover {
     opacity: 0.6;
+    transition: 0.3s;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.3s;
   }
 }
 
@@ -147,11 +154,10 @@
   }
 }
 
-@media (--mobile-widths-only) {
+/*Стили для мобильного меню*/
 
   .main-nav--closed .main-nav__list,
-  .main-nav--closed .main-nav__user-block,
-  .main-nav--closed .main-nav__optional {
+  .main-nav--closed .main-nav__user-block {
     display: none;
   }
 
@@ -168,19 +174,35 @@
   }
 
   .main-nav--no-js .main-nav__list,
-  .main-nav--no-js .main-nav__user-block,
-  .main-nav--no-js .main-nav__optional {
+  .main-nav--no-js .main-nav__user-block {
     position: static;
     display: block;
   }
-}
 
 @media (--tablet-widths) {
+
   .main-nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     background-color: transparent;
+  }
+
+
+  .main-nav--closed .main-nav__list,
+  .main-nav--closed .main-nav__user-block {
+    display: flex;
+  }
+
+  .main-nav--opened.main-nav {
+    position: static;
+    background-color: transparent;
+  }
+
+  .main-nav--no-js .main-nav__list,
+  .main-nav--no-js .main-nav__user-block {
+    position: static;
+    display: flex;
   }
 
   .main-nav__item--optional:last-child {
@@ -197,6 +219,7 @@
     padding-top: 14px;
     padding-bottom: 8px;
     text-align: left;
+    box-shadow: none;
 
     &--no-link {
       padding-top: 22px;

@@ -58,8 +58,7 @@
   height: 457px;
   background: url("../img/icon-map-pin.svg") no-repeat,
               #f3f1ea url("../img/map-mobile@1x.jpg") no-repeat;
-  background-position: calc(50% - 3px) 165px,
-                       center center;
+  background-position:  calc(50% - 3px) 165px, center center;
   color: $black;
 }
 

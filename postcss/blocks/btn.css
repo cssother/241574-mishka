@@ -4,7 +4,6 @@
   padding: 16px;
   width: 260px;
   background-color: $white;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1;
   font-weight: bold;
@@ -19,11 +18,13 @@
   &:hover {
     color: $white;
     background-color: $gray;
+    transition: 0.3s;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: $gray;
+    transition: 0.3s;
   }
 
   &--size {
@@ -35,6 +36,7 @@
     border-color: #c7c7c7;
     background-color: $white;
     color: $gray;
+    transition: border-color 0.3s;
   }
 
   &--green {
@@ -48,68 +50,8 @@
   &--green:active {
     background-color: $green;
   }
-
-  &--video {
-    position: relative;
-    padding: 0;
-    width: 100px;
-    height: 77px;
-    font-size: 0;
-    border-radius: 20px;
-    border: 5px solid $white;
-    background-color: #62d1ba;
-    outline: none;
-
-    &:hover {
-      width: 120px;
-      height: 93px;
-      background-color: #62d1ba;
-    }
-
-    &:hover::after {
-      left: 39px;
-      top: 19px;
-      width: 72px;
-      height: 45px;
-      border-left-width: 36px;
-      border-right-width: 36px;
-      border-top-width: 23px;
-      border-bottom-width: 23px;
-    }
-
-    &:active {
-      width: 80px;
-      height: 62px;
-      background-color: #62d1ba;
-      opacity: 0.3;
-    }
-
-    &:active::after {
-      left: 26px;
-      top: 12px;
-      width: 48px;
-      height: 30px;
-      border-left-width: 24px;
-      border-right-width: 24px;
-      border-top-width: 15px;
-      border-bottom-width: 15px;
-    }
-  }
-
-  &--video::after {
-    content: "";
-    position: absolute;
-    left: 33px;
-    top: 15px;
-    box-sizing: border-box;
-    width: 60px;
-    height: 37px;
-    border-left: 30px solid $white;
-    border-right: 30px solid transparent;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-  }
 }
+
 
 @media (--tablet-widths) {
   .btn {

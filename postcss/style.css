@@ -4,6 +4,7 @@
 @import "global/mixins.css";
 @import "global/fonts.css";
 @import "global/scaffolding.css";
+@import "global/animation.css";
 
 @import "blocks/advantages.css";
 @import "blocks/assortment.css";

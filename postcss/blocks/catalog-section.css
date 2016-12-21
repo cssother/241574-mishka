@@ -2,59 +2,100 @@
   @mixin container;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: flex-start;
+  overflow: hidden;
+  padding-top: 5px;
 }
 
 .catalog-section__link {
+  position: relative;
   box-sizing: border-box;
   display: block;
   padding-left: 29px;
   padding-right: 125px;
   padding-top: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   font-size: 19px;
   line-height: 1.3;
   font-weight: bold;
   color: $white;
   text-decoration: none;
+  margin-bottom: -5px;
 
-  &--lamp {
-    background: $green url("../img/icon-interior.svg") no-repeat calc(100% - 36px) 25px;
-  }
-
-  &--toy {
-    background: #56c3b2 url("../img/icon-toy.svg") no-repeat calc(100% - 27px) center;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    width: 62px;
+    height: 62px;
+    opacity: 0.5;
   }
 
   &:hover {
-    padding-bottom: 35px;
+    transform: translateY(-5px);
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+
+  &--lamp {
+    background: $green;
+  }
+
+  &--lamp::after {
+    top: 22px;
+    background: url("../img/icon-interior.svg") no-repeat center center;
   }
 
   &--lamp:hover {
     background-color: #59d5bc;
+    transition: 0.3s;
   }
 
   &--lamp:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #59d5bc;
+    transition: 0.3s;
+  }
+
+  &--toy {
+    background-color: #56c3b2;
+  }
+
+  &--toy::after {
+    top: 20px;
+    background: url("../img/icon-toy.svg") no-repeat center center;
   }
 
   &--toy:hover {
     background-color: #46c1ae;
+    transition: 0.3s;
   }
 
   &--toy:active {
-    color: rgba(255, 255, 255, 0.3);
     background-color: #46c1ae;
+    transition: 0.3s;
   }
 }
 
 @media (--tablet-widths) {
 
   .catalog-section {
-    margin-top: -118px;
-    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
   }
 
   .catalog-section__link {
@@ -64,12 +105,16 @@
     font-size: 20px;
     line-height: 1.5;
 
-    &--lamp {
-      background-position: calc(100% - 38px) 30px;
+    &:after {
+      top: 30px;
     }
 
-    &--toy {
-      background-position: calc(100% - 36px) 32px;
+    &--lamp::after {
+      right: 25px;
+    }
+
+    &--toy::after {
+      right: 33px;
     }
   }
 }
@@ -77,7 +122,7 @@
 @media (--desktop-widths) {
 
   .catalog-section {
-    width: 1050px;
+    width: 1150px;
   }
 
   .catalog-section__link {

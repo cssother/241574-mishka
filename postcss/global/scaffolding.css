@@ -10,26 +10,10 @@ body {
   background-color: $white;
 }
 
+input, textarea, keygen, select, button {
+  font-family: inherit;
+}
+
 textarea {
-  max-width: 260px;
-}
-
-input, textarea {
-  background-color: inherit;
-}
-
-@media (--tablet-widths) {
-
-  textarea {
-    min-width: 501px;
-    max-width: 501px;
-  }
-}
-
-@media (--desktop-widths) {
-
-  textarea {
-    min-width: 701px;
-    max-width: 701px;
-  }
+  resize: vertical;
 }

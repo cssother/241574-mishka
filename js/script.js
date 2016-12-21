@@ -3,7 +3,7 @@ var navToggle = document.querySelector(".main-nav__toggle");
 
 mainNav.classList.remove("main-nav--no-js");
 
-navToggle.addEventListener("click", function () {
+navToggle.addEventListener("click", function(event) {
   event.preventDefault();
   if (mainNav.classList.contains("main-nav--closed")) {
     mainNav.classList.remove("main-nav--closed");
@@ -21,7 +21,7 @@ var overlay = document.querySelector(".overlay");
 
 if (modal && overlay) {
   if (productBtn) {
-    productBtn.addEventListener ("click", function() {
+    productBtn.addEventListener ("click", function(event) {
       event.preventDefault();
       modal.classList.add("modal--show");
       overlay.classList.add("overlay--show");
@@ -29,14 +29,14 @@ if (modal && overlay) {
   }
 
   if (productionBtn) {
-    productionBtn.addEventListener ("click", function() {
+    productionBtn.addEventListener ("click", function(event) {
       event.preventDefault();
       modal.classList.add("modal--show");
       overlay.classList.add("overlay--show");
     });
   }
 
-  overlay.addEventListener ("click", function() {
+  overlay.addEventListener ("click", function(event) {
     event.preventDefault();
     modal.classList.remove("modal--show");
     overlay.classList.remove("overlay--show");

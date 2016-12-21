@@ -2,6 +2,5 @@ $white: #ffffff;
 $black: #000000;
 $gray: #444444;
 $green: #63d1bb;
-@custom-media --mobile-widths-only (max-width: 767px);
 @custom-media --tablet-widths (min-width: 768px);
 @custom-media --desktop-widths (min-width: 1150px);

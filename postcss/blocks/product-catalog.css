@@ -3,10 +3,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  width: 260px;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
   }
 
   &:active {
@@ -164,7 +164,6 @@
 
   .product-catalog {
     flex-direction: column;
-    margin-bottom: 0;
     width: 316px;
   }
 

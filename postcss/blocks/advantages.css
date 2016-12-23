@@ -1,14 +1,26 @@
 .advantages {
-  @mixin container;
-  padding: 30px;
+  position: relative;
   padding-top: 35px;
   padding-bottom: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url("../img/bg-zigzag-line.svg") repeat-x center top;
+    background-size: auto 6px;
+  }
 }
 
 .advantages__title {
   margin: 0;
+  @mixin container;
   margin-bottom: 29px;
-  padding: 0;
+  padding: 0 30px;
   font-size: 25px;
   line-height: 1.2;
   font-weight: bold;
@@ -19,7 +31,10 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  @mixin container;
   padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
   list-style: none;
   font-size: 17px;
   line-height: 1.2;
@@ -51,22 +66,27 @@
 
   &--money::before {
     background-image: url("../img/icon-feature-3.svg");
+    top: -3px;
   }
 
   &--heart::before {
     background-image: url("../img/icon-feature-5.svg");
+    left: 7px;
   }
 
   &--clew::before {
     background-image: url("../img/icon-feature-2.svg");
+    left: 4px;
   }
 
   &--rocket::before {
     background-image: url("../img/icon-feature-4.svg");
+    left: -5px;
   }
 
   &--present::before {
     background-image: url("../img/icon-feature-6.svg");
+    left: 3px;
   }
 }
 
@@ -74,14 +94,19 @@
 @media (--tablet-widths) {
 
   .advantages {
-    padding-top: 75px;
+    padding-top: 64px;
     padding-bottom: 32px;
-    padding-left: 50px;
-    padding-right: 50px;
+
+    &::before {
+      background-size: auto 15px;
+      background-position: 13px top;
+    }
   }
 
   .advantages__title {
     margin-bottom: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 43px;
   }
 
@@ -89,6 +114,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .advantages__item {
@@ -127,13 +154,22 @@
 @media (--desktop-widths) {
 
   .advantages {
-    padding-top: 90px;
+    padding-top: 77px;
     padding-bottom: 34px;
-    width: 800px;
+
+    &::before {
+      background-size: contain;
+      background-position: -5px top;
+    }
   }
 
   .advantages__title {
     font-size: 53px;
+    width: 800px;
+  }
+
+  .advantages__list {
+    width: 800px;
   }
 
   .advantages__item {

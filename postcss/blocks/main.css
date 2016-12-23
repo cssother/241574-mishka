@@ -4,24 +4,18 @@
 
 @media (--tablet-widths) {
 
-  .main {
-
-    .main__title {
-      margin-top: -69px;
-    }
+  .main .main__title {
+    margin-top: -69px;
   }
 
   .main__catalog-section {
-    margin-top: -122px;
+    margin-top: -123px;
   }
 }
 
 @media (--desktop-widths) {
 
-  .main {
-
-    .main__title {
-      margin-top: -76px;
-    }
+  .main .main__title {
+    margin-top: -76px;
   }
 }

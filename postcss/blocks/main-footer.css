@@ -16,7 +16,7 @@
 @media (--tablet-widths) {
 
   .main-footer {
-    padding-top: 30px;
+    padding-top: 27px;
   }
 
   .main-footer__wrapper {
@@ -30,16 +30,22 @@
   .main-footer__logo {
     display: block;
     margin-right: 155px;
+    margin-top: -8px;
   }
 
   .main-footer__logo a {
 
+    &:hover {
+      fill: #46c1ae;
+    }
+
     &:active {
+      fill: #46c1ae;
       opacity: 0.3;
     }
   }
 
-  .main-footer__logo img {
+  .main-footer__logo svg {
     width: 106px;
     height: 40px;
   }

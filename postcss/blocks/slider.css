@@ -13,16 +13,19 @@
   cursor: pointer;
   outline: none;
   background-color: $white;
-  background-repeat: no-repeat;
-  background-position: center center;
+
+  &:hover {
+    fill: #666666;
+    transition: 0.3s;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+    transition: 0.3s;
+  }
 
   &--prev {
     border-right: none;
-    background-image: url("../img/icon-left-arrow.svg");
-  }
-
-  &--next {
-    background-image: url("../img/icon-right-arrow.svg");
   }
 }
 

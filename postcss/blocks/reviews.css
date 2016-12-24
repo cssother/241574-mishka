@@ -2,7 +2,7 @@
   @mixin container;
   padding: 30px;
   padding-top: 5px;
-  padding-bottom: 37px;
+  padding-bottom: 44px;
 }
 
 .reviews__wrapper {
@@ -66,8 +66,13 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 76px;
-    padding-bottom: 76px;
-    background: $white url("../img/review@1x.jpg") repeat-y;
+    padding-bottom: 82px;
+    background: $white url("../img/review@1x.jpg") no-repeat;
+    background-size: 350px auto;
+
+    @media (--retina) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__wrapper {
@@ -78,7 +83,8 @@
 
   .reviews__title {
     order: 1;
-    margin-bottom: 49px;
+    margin-left: -5px;
+    margin-bottom: 46px;
     font-size: 43px;
   }
 
@@ -134,6 +140,7 @@
 
   .reviews__text {
     margin-bottom: 40px;
+    width: 800px;
   }
 
   .reviews__author-name {

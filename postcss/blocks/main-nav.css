@@ -95,18 +95,30 @@
 
   &--icon:hover::before {
     opacity: 1;
+    transition: 0.3s;
   }
 
   &--icon:active::before {
     opacity: 0.3;
+    transition: 0.3s;
   }
 
   &--search::before {
     background-image: url("../img/icon-search.svg");
   }
 
+  &--search:hover::before,
+  &--search:active::before {
+    background-image: url("../img/icon-search-green.svg");
+  }
+
   &--basket::before {
     background-image: url("../img/icon-cart.svg");
+  }
+
+  &--basket:hover::before,
+  &--basket:active::before {
+    background-image: url("../img/icon-cart-green.svg");
   }
 
   &--optional {
@@ -156,28 +168,28 @@
 
 /*Стили для мобильного меню*/
 
-  .main-nav--closed .main-nav__list,
-  .main-nav--closed .main-nav__user-block {
-    display: none;
-  }
+.main-nav--closed .main-nav__list,
+.main-nav--closed .main-nav__user-block {
+  display: none;
+}
 
-  .main-nav--opened.main-nav {
-    position: absolute;
-    background-color: $white;
-    left: 0;
-    right: 0;
-  }
+.main-nav--opened.main-nav {
+  position: absolute;
+  background-color: $white;
+  left: 0;
+  right: 0;
+}
 
-  .main-nav--no-js .main-nav__toggle {
-    background-image: url("../img/icon-menu-close.svg");
-    cursor: default;
-  }
+.main-nav--no-js .main-nav__toggle {
+  background-image: url("../img/icon-menu-close.svg");
+  cursor: default;
+}
 
-  .main-nav--no-js .main-nav__list,
-  .main-nav--no-js .main-nav__user-block {
-    position: static;
-    display: block;
-  }
+.main-nav--no-js .main-nav__list,
+.main-nav--no-js .main-nav__user-block {
+  position: static;
+  display: block;
+}
 
 @media (--tablet-widths) {
 
@@ -187,7 +199,6 @@
     justify-content: space-between;
     background-color: transparent;
   }
-
 
   .main-nav--closed .main-nav__list,
   .main-nav--closed .main-nav__user-block {
@@ -299,14 +310,14 @@
 
   .main-nav__logo {
     order: 2;
-    padding-top: 7px;
+    padding-top: 2px;
     padding-bottom: 0;
     margin-left: 33px;
     margin-right: auto;
 
     &--no-link {
       margin-left: 41px;
-      padding-top: 15px;
+      padding-top: 10px;
     }
   }
 

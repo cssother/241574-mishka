@@ -4,3 +4,4 @@ $gray: #444444;
 $green: #63d1bb;
 @custom-media --tablet-widths (min-width: 768px);
 @custom-media --desktop-widths (min-width: 1150px);
+@custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);

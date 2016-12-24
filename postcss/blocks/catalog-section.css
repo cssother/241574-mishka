@@ -28,6 +28,7 @@
     right: 25px;
     width: 62px;
     height: 62px;
+    background-size: 62px 62px;
     opacity: 0.5;
   }
 
@@ -50,8 +51,24 @@
     transition: 0.3s;
   }
 
-  &--lamp {
+  &:nth-child(2n + 1) {
     background: $green;
+  }
+
+  &:nth-child(2n + 1):hover,
+  &:nth-child(2n + 1):active {
+    background-color: #59d5bc;
+    transition: 0.3s;
+  }
+
+  &:nth-child(2n) {
+    background-color: #56c3b2;
+  }
+
+  &:nth-child(2n):hover,
+  &:nth-child(2n):active {
+    background-color: #46c1ae;
+    transition: 0.3s;
   }
 
   &--lamp::after {
@@ -59,34 +76,9 @@
     background: url("../img/icon-interior.svg") no-repeat center center;
   }
 
-  &--lamp:hover {
-    background-color: #59d5bc;
-    transition: 0.3s;
-  }
-
-  &--lamp:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #59d5bc;
-    transition: 0.3s;
-  }
-
-  &--toy {
-    background-color: #56c3b2;
-  }
-
   &--toy::after {
     top: 20px;
     background: url("../img/icon-toy.svg") no-repeat center center;
-  }
-
-  &--toy:hover {
-    background-color: #46c1ae;
-    transition: 0.3s;
-  }
-
-  &--toy:active {
-    background-color: #46c1ae;
-    transition: 0.3s;
   }
 }
 
@@ -105,7 +97,7 @@
     font-size: 20px;
     line-height: 1.5;
 
-    &:after {
+    &::after {
       top: 30px;
     }
 

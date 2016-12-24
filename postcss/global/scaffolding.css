@@ -17,3 +17,8 @@ input, textarea, keygen, select, button {
 textarea {
   resize: vertical;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}

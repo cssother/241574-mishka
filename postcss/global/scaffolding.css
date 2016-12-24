@@ -10,6 +10,10 @@ body {
   background-color: $white;
 }
 
+body > svg {
+  display: none;
+}
+
 input, textarea, keygen, select, button {
   font-family: inherit;
 }

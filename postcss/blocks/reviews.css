@@ -66,8 +66,8 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 76px;
-    padding-bottom: 82px;
-    background: $white url("../img/review@1x.jpg") no-repeat;
+    padding-bottom: 15px;
+    background: $white url("../img/review@1x.jpg") repeat-y;
     background-size: 350px auto;
 
     @media (--retina) {
@@ -129,7 +129,7 @@
     padding-right: 0;
     padding-left: 175px;
     padding-top: 67px;
-    padding-bottom: 64px;
+    padding-bottom: 60px;
     width: 1050px;
   }
 

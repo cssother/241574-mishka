@@ -65,6 +65,7 @@
   width: 100%;
   padding: 0;
   font-size: 0;
+  background-color: #ececec;
   background: url("../img/video-mobile@1x.jpg") no-repeat center center;
   background-size: 260px 150px;
   border: none;

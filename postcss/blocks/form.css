@@ -277,13 +277,6 @@
       margin-bottom: 0;
     }
 
-    &--gray {
-      background-color: #f1f1f1;
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
     &--gray:nth-last-child(4) {
       padding-bottom: 17px;
     }
@@ -292,6 +285,13 @@
       padding-top: 0;
       padding-bottom: 43px;
     }
+  }
+
+  .form__section.form__section--gray {
+    background-color: #f1f1f1;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form__section--gray:nth-last-child(4) .form__section-wrapper,

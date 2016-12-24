@@ -55,7 +55,7 @@
       bottom: -13px;
       left: 0;
       right: 0;
-      background: url("../img/bg-zigzag-fill.svg") repeat-x -16px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x center;
       background-size: auto 23px;
     }
   }
@@ -82,7 +82,6 @@
     &::after {
       height: 32px;
       background-size: contain;
-      background-position: 30px;
     }
   }
 

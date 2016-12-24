@@ -99,7 +99,6 @@
 
     &::before {
       background-size: auto 15px;
-      background-position: 13px top;
     }
   }
 
@@ -159,7 +158,6 @@
 
     &::before {
       background-size: contain;
-      background-position: -5px top;
     }
   }
 

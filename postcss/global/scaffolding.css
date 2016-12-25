@@ -10,12 +10,21 @@ body {
   background-color: $white;
 }
 
+body > svg {
+  display: none;
+}
+
 input, textarea, keygen, select, button {
   font-family: inherit;
 }
 
 textarea {
   resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 img {

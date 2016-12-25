@@ -104,11 +104,17 @@
   width: 20px;
   height: 20px;
   background: url("../img/icon-cart.svg") no-repeat center center;
+  opacity: 0.2;
   font-size: 0;
 
   &:hover,
   &:active {
     background-image: url("../img/icon-cart-green.svg");
+    transition: 0.3s;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 
   &:active {

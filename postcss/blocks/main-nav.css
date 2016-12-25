@@ -181,8 +181,7 @@
 }
 
 .main-nav--no-js .main-nav__toggle {
-  background-image: url("../img/icon-menu-close.svg");
-  cursor: default;
+  display: none;
 }
 
 .main-nav--no-js .main-nav__list,

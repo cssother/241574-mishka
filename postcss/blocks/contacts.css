@@ -11,7 +11,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background: url("../img/bg-zigzag-line.svg") repeat-x center top;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+    background-position: center top;
     background-size: auto 6px;
   }
 }
@@ -42,7 +43,8 @@
 }
 
 .contacts__item-name {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   padding: 0;
   margin-left: -3px;
   width: 50px;
@@ -70,7 +72,8 @@
   margin-bottom: 39px;
   min-width: 320px;
   height: 457px;
-  background: url("../img/icon-map-pin.svg") no-repeat, #f3f1ea url("../img/map-mobile@1x.jpg") no-repeat;
+  background-color: #f3f1ea;
+  background: url("../img/icon-map-pin.svg") no-repeat, url("../img/map-mobile@1x.jpg") no-repeat;
   background-position:  calc(50% - 3px) 165px, center center;
   background-size: 66px 101px, 320px auto;
   color: $black;
@@ -94,12 +97,12 @@
 @media (--tablet-widths) {
 
   .contacts {
-    padding-top: 66px;
+    padding-top: 133px;
     padding-bottom: 55px;
 
     &::before {
+      top: 68px;
       background-size: auto 15px;
-      background-position: 13px top;
     }
   }
 
@@ -156,6 +159,8 @@
   }
 
   .contacts__item-value {
+    display: inline-block;
+    vertical-align: top;
     width: 240px;
   }
 
@@ -177,13 +182,12 @@
 @media (--desktop-widths) {
 
   .contacts {
-    padding-top: 213px;
+    padding-top: 217px;
     padding-bottom: 49px;
 
     &::before {
-      top: 63px;
+      top: 67px;
       background-size: contain;
-      background-position: 27px top;
     }
   }
 
@@ -192,16 +196,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    @mixin container;
-    padding-left: 167px;
+    box-sizing: border-box;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
     padding-right: 50px;
   }
 
   .contacts__wrapper {
     order: 1;
     width: 380px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 76px;
-    padding-left: 47px;
+    padding-left: 165px;
   }
 
   .contacts__title {
@@ -210,7 +219,7 @@
     width: 380px;
 
     &::before {
-      left: -112px;
+      left: -107px;
       top: 9px;
     }
   }
@@ -229,7 +238,7 @@
   }
 
   .contacts__item:first-child {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 
   .contacts__map {
@@ -250,6 +259,6 @@
   .contacts__btn {
     order: 3;
     margin-top: -108px;
-    margin-left: 58px;
+    margin-left: 165px;
   }
 }

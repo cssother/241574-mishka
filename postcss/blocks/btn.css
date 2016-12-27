@@ -30,13 +30,13 @@
   &--size {
     width: 82px;
     border-color: #ececec;
-  }
 
-  &--size:hover {
-    border-color: #c7c7c7;
-    background-color: $white;
-    color: $gray;
-    transition: border-color 0.3s;
+    &:hover {
+      border-color: #c7c7c7;
+      background-color: $white;
+      color: $gray;
+      transition: border-color 0.3s;
+    }
   }
 
   &--green {
@@ -44,11 +44,11 @@
     width: 260px;
     background-color: $green;
     color: $white;
-  }
 
-  &--green:hover,
-  &--green:active {
-    background-color: $green;
+    &:hover,
+    &:active {
+      background-color: $green;
+    }
   }
 }
 

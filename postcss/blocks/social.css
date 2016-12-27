@@ -32,33 +32,33 @@
     width: 22px;
     height: 21px;
     background: url("../img/icon-insta.svg") no-repeat;
-  }
 
-  &--inst:hover,
-  &--inst:active {
-    background-image: url("../img/icon-insta-green.svg");
+    &:hover,
+    &:active {
+      background-image: url("../img/icon-insta-green.svg");
+    }
   }
 
   &--fb {
     width: 15px;
     height: 28px;
     background: url("../img/icon-fb.svg") no-repeat;
-  }
 
-  &--fb:hover,
-  &--fb:active {
-    background-image: url("../img/icon-fb-green.svg");
+    &:hover,
+    &:active {
+      background-image: url("../img/icon-fb-green.svg");
+    }
   }
 
   &--tw {
     width: 24px;
     height: 20px;
     background: url("../img/icon-twitter.svg") no-repeat;
-  }
 
-  &--tw:hover,
-  &--tw:active {
-    background-image: url("../img/icon-twitter-green.svg");
+    &:hover,
+    &:active {
+      background-image: url("../img/icon-twitter-green.svg");
+    }
   }
 
   &:hover {

@@ -3,7 +3,7 @@
   font-size: 0;
 }
 
-.customer-form__checkbox {
+.customer-form__radio {
   display: none;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.customer-form__checkbox:checked + .customer-form__label {
+.customer-form__radio:checked + .customer-form__label {
   border-color: $green;
   background-color: $white;
   color: $gray;

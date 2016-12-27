@@ -132,18 +132,16 @@
         <div class="contacts__inner">
           <div class="contacts__wrapper">
             <h2 class="contacts__title">Контакты</h2>
-            <table class="contacts__table">
-              <tr class="contacts__item">
-                <td class="contacts__item-name">e-mail:</td>
-                <td class="contacts__item-value">
-                  <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-                </td>
-              </tr>
-              <tr class="contacts__item">
-                <td class="contacts__item-name">адрес:</td>
-                <td class="contacts__item-value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</td>
-              </tr>
-            </table>
+            <div class="contacts__items">
+              <div class="contacts__item">
+                <span class="contacts__item-name">e-mail:</span>
+                <a class="contacts__item-value contacts__item-value--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </div>
+              <div class="contacts__item">
+                <span class="contacts__item-name">адрес:</span>
+                <span class="contacts__item-value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</span>
+              </div>
+            </div>
           </div>
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177083!2d30.320889250973494!3d59.93879686895981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1481202123127" allowfullscreen></iframe>
@@ -175,11 +173,11 @@
       <p class="modal__text">Выберите размер:</p>
       <form class="customer-form modal__form" action="#" method="post">
         <div class="customer-form__wrapper">
-          <input class="customer-form__checkbox" id="size-s" type="checkbox" name="size-s" value="size-s" checked>
+          <input class="customer-form__radio" id="size-s" type="radio" name="size" value="size-s" checked>
           <label class="customer-form__label btn btn--size" for="size-s">S</label>
-          <input class="customer-form__checkbox" id="size-m" type="checkbox" name="size-m" value="size-m">
+          <input class="customer-form__radio" id="size-m" type="radio" name="size" value="size-m">
           <label class="customer-form__label btn btn--size" for="size-m">M</label>
-          <input class="customer-form__checkbox" id="size-l" type="checkbox" name="size-l" value="size-l">
+          <input class="customer-form__radio" id="size-l" type="radio" name="size" value="size-l">
           <label class="customer-form__label btn btn--size" for="size-l">L</label>
         </div>
         <button class="customer-form__btn btn btn--green" type="submit">Добавить</button>

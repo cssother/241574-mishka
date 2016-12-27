@@ -1,69 +1,81 @@
 .contacts {
   position: relative;
-  padding-top: 45px;
+  padding-top: 43px;
   padding-bottom: 38px;
 
   &::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 23px;
+    height: 6px;
     top: 0;
     left: 0;
     right: 0;
     background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-position: center top;
-    background-size: auto 6px;
+    background-size: contain;
   }
 }
 
 .contacts__wrapper {
   @mixin container;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 38px;
 }
 
 .contacts__title {
   margin: 0;
+  margin-left: -2px;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 1.7;
   font-weight: bold;
   color: $black;
 }
 
-.contacts__table {
-  margin: 0;
-  margin-top: -3px;
-  margin-bottom: 11px;
-  margin-left: -24px;
+.contacts__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   font-size: 15px;
   line-height: 2;
   font-weight: normal;
   color: $gray;
-  border-spacing: 27px;
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item-name {
-  display: inline-block;
-  vertical-align: top;
   padding: 0;
-  margin-left: -3px;
+  margin-right: 27px;
   width: 50px;
 }
 
-.contacts__email {
-  padding-bottom: 2px;
-  color: $gray;
-  text-decoration: none;
-  border-bottom: 1px solid #62d1ba;
+.contacts__item-value {
+  width: 180px;
 
-  &:hover {
-    color: #46c1ae;
-    transition: 0.3s;
-  }
+  &--email {
+    color: $gray;
+    text-decoration: none;
+    border-bottom: 1px solid #62d1ba;
 
-  &:active {
-    opacity: 0.3;
-    transition: 0.3s;
+    &:hover {
+      color: #46c1ae;
+      transition: 0.3s;
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: 0.3s;
+    }
   }
 }
 
@@ -102,19 +114,20 @@
 
     &::before {
       top: 68px;
-      background-size: auto 15px;
+      height: 17px;
     }
   }
 
   .contacts__wrapper {
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 55px;
   }
 
   .contacts__title {
     position: relative;
     margin-left: -5px;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
     font-size: 43px;
 
     &::before {
@@ -129,39 +142,34 @@
     }
   }
 
-  .contacts__table {
+  .contacts__items {
     display: flex;
-    justify-content: space-between;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 56px;
+    flex-wrap: nowrap;
+    flex-direction: row;
     font-size: 17px;
     line-height: 1.8;
   }
 
-  .contacts__table tbody {
-    display: flex;
-  }
-
   .contacts__item {
-    display: flex;
-    justify-content: space-between;
+    margin-right: 52px;
 
-    &:first-child {
-      margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
     }
   }
 
   .contacts__item-name {
-    margin-left: 0;
-    padding-right: 6px;
+    margin-right: 7px;
     width: 70px;
   }
 
   .contacts__item-value {
-    display: inline-block;
-    vertical-align: top;
     width: 240px;
+
+    &--email {
+      align-self: flex-start;
+      width: auto;
+    }
   }
 
   .contacts__map {
@@ -182,12 +190,12 @@
 @media (--desktop-widths) {
 
   .contacts {
-    padding-top: 217px;
+    padding-top: 151px;
     padding-bottom: 49px;
 
     &::before {
       top: 67px;
-      background-size: contain;
+      height: 23px;
     }
   }
 
@@ -200,22 +208,24 @@
     width: 1150px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 60px;
+    padding-top: 64px;
+    padding-left: 113px;
     padding-right: 50px;
   }
 
   .contacts__wrapper {
     order: 1;
-    width: 380px;
+    width: 420px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 76px;
-    padding-left: 165px;
+    margin-bottom: 150px;
+    padding-left: 111px;
+    padding-right: 20px;
   }
 
   .contacts__title {
     font-size: 53px;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     width: 380px;
 
     &::before {
@@ -224,21 +234,17 @@
     }
   }
 
-  .contacts__table {
-    width: 380px;
-    margin-left: 0;
-  }
-
-  .contacts__table tbody {
+  .contacts__items {
     flex-direction: column;
+    width: 380px;
   }
 
   .contacts__item {
-    justify-content: flex-start;
-  }
+    margin-bottom: 28px;
 
-  .contacts__item:first-child {
-    margin-bottom: 26px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .contacts__map {
@@ -259,6 +265,7 @@
   .contacts__btn {
     order: 3;
     margin-top: -108px;
-    margin-left: 165px;
+    margin-left: 112px;
+    margin-right: 120px;
   }
 }
